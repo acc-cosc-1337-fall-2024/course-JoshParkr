@@ -13,19 +13,19 @@ string get_letter_grade_using_if(int grade)
     {
         letter_grade = "A";
     }
-    else if (grade >= 80)
+    else if (grade <= 100 && grade >= 80)
     {
         letter_grade = "B";
     }
-    else if (grade >= 70)
+    else if (grade <= 100 && grade >= 70)
     {
         letter_grade = "C";
     }
-    else if (grade >= 60)
+    else if (grade <= 100 && grade >= 60)
     {
         letter_grade = "D";
     }
-    else if (grade >= 0)
+    else if (grade <= 100 && grade >= 0)
     {
         letter_grade = "F";
     }
