@@ -31,7 +31,7 @@ string get_letter_grade_using_if(int grade)
     }
     else
     {
-        letter_grade = "Invalid Grade Inputted";
+        letter_grade = "Invalid Grade Inputted. Grade must be between 0 and 100.";
     }
 
     return letter_grade;
@@ -41,25 +41,25 @@ string get_letter_grade_using_switch(int grade)
 {
     string letter_grade;
 
-    switch (grade/10)
+    switch (grade)
     {
-    case 9 ... 10:
+    case 90 ... 100:
         letter_grade = "A";
         break;
-    case 8:
+    case 80 ... 89:
         letter_grade = "B";
         break;
-    case 7:
+    case 70 ... 79:
         letter_grade = "C";
         break;
-    case 6:
+    case 60 ... 69:
         letter_grade = "D";
         break;
-    case 0 ... 5:
+    case 0 ... 59:
         letter_grade = "F";
         break;
     default:
-        letter_grade = "Invalid Grade Inputted";
+        letter_grade = "Invalid Grade Inputted. Grade must be between 0 and 100.";
         break;
     }
 
