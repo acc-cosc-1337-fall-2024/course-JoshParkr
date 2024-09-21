@@ -16,8 +16,8 @@ TEST_CASE("Verify get_letter_grade_using_if function")
 	REQUIRE("F" == get_letter_grade_using_if(50));
 	REQUIRE("F" == get_letter_grade_using_if(0));
 
-	REQUIRE("Invalid Grade Inputted" == get_letter_grade_using_if(-50));
-	REQUIRE("Invalid Grade Inputted" == get_letter_grade_using_if(200));
+	REQUIRE("Invalid Grade Inputted. Grade must be between 0 and 100." == get_letter_grade_using_if(-50));
+	REQUIRE("Invalid Grade Inputted. Grade must be between 0 and 100." == get_letter_grade_using_if(200));
 }
 
 TEST_CASE("Verify get_letter_grade_using_switch function")
@@ -30,6 +30,6 @@ TEST_CASE("Verify get_letter_grade_using_switch function")
 	REQUIRE("F" == get_letter_grade_using_switch(50));
 	REQUIRE("F" == get_letter_grade_using_switch(0));
 
-	REQUIRE("Invalid Grade Inputted" == get_letter_grade_using_switch(-50));
-	REQUIRE("Invalid Grade Inputted" == get_letter_grade_using_if(200));
+	REQUIRE("Invalid Grade Inputted. Grade must be between 0 and 100." == get_letter_grade_using_switch(-50));
+	REQUIRE("Invalid Grade Inputted. Grade must be between 0 and 100." == get_letter_grade_using_if(200));
 }
