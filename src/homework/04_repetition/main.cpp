@@ -1,8 +1,8 @@
 //write include statements
-
+#include "repetition.h"
 //write using statements
 
 int main() 
 {
-	return 0;
+	menu();
 }

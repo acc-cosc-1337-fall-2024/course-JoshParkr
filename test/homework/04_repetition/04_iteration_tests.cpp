@@ -21,5 +21,5 @@ TEST_CASE("Verify gcd function") {
 	REQUIRE(25 == gcd(25,100));
 
 	REQUIRE(25 == gcd(100,25));
-	REQUIRE(1 == gcd(7,8));
+	REQUIRE(1 == gcd(7,13));
 }
