@@ -5,16 +5,19 @@ using std::cout; using std::cin;
 
 int main() 
 {
-	TicTacToe game;
 	string first_player;
 	int position;
 	char user_play_again;
 
 	do
 	{
-		cout << "Enter first player: ";
-		cin >> first_player;
-
+		TicTacToe game;
+		do
+		{
+			cout << "Enter first player: ";
+			cin >> first_player;
+		}
+		while(first_player != "X" && first_player != "O");
 		game.start_game(first_player);
 
 		while(!game.game_over())
@@ -24,6 +27,8 @@ int main()
 			game.mark_board(position);
 			game.display_board();
 		}
+
+		cout << "Winner!: " << game.get_winner() << "\n";
 
 		cout << "Play again, enter y or Y: ";
 		cin >> user_play_again;
