@@ -34,7 +34,7 @@ TEST_CASE("Verify Game Over"){
 	REQUIRE("C" == game.get_winner());
 }
 
-TEST_CASE("Verify Plaer"){
+TEST_CASE("Verify Player"){
 
 	TicTacToe game;
 
