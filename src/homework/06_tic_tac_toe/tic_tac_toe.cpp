@@ -71,45 +71,6 @@ void TicTacToe::clear_board()
     }
 }
 
-bool TicTacToe::check_column_win()
-{
-    for(auto i = 0; i < 3; i++)
-    {
-        if(pegs[i] != " " && (pegs[i] == pegs[i + 3] && pegs[i] == pegs[i + 6]))
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-bool TicTacToe::check_row_win()
-{
-
-    for(auto i = 0; i < 7; i+=3)
-    {
-        if(pegs[i] != " " && (pegs[i] == pegs[i + 1] && pegs[i] == pegs[i + 2]))
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-bool TicTacToe::check_diagonal_win()
-{
-    bool win = false;
-    if(pegs[0] != " " && (pegs[0] == pegs[4]) && (pegs[0] == pegs[8]))
-    {
-        win = true;
-    }
-    if(pegs[2] != " " && (pegs[2] == pegs[4]) && (pegs[2] == pegs[6]))
-    {
-        win = true;
-    }
-    return win;
-}
-
 void TicTacToe::set_winner(string player)
 {
     winner = (player == "X") ? "O" : "X";
