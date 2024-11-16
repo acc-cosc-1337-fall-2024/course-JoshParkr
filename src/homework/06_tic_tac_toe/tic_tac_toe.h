@@ -13,7 +13,7 @@ class TicTacToe
 {
 
 public:
-
+    TicTacToe() : pegs(9, " ") {}
     TicTacToe(int size):pegs(size*size, " " ){}
 
     bool game_over();

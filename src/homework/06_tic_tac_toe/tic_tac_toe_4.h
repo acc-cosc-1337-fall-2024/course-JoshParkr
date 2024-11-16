@@ -1,6 +1,8 @@
 //h
-
 #include "tic_tac_toe.h"
+
+#ifndef TIC_TAC_TOE4_H
+#define TIC_TAC_TOE4_H
 
 class TicTacToe4 : public TicTacToe
 {
@@ -16,3 +18,5 @@ private:
     bool check_diagonal_win();
 
 };
+
+#endif
